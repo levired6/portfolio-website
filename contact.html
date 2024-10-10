@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact info</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <!--Google font link comes before styles.css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!--Style sheet link-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+    <Body>
+        <header class="page-header">
+            <!--Company Logo-->
+               <div class="logo-container">
+               <img src="images/levi_logo.jpeg" alt="logo" class="page-header__item">
+               </div>
+           <nav>
+           <ul>
+               <!--Nav Bar-->
+           <div class="circleBehind">
+               <li role="presentation"><a href="index.html" role="menuitem" class="navigation-item">Home</a></li>
+               <li role="presentation"><a href="about.html" role="menuitem" class="navigation-item">About</a></li>
+               <li role="presentation"><a href="contact.html" role="menuitem" class="navigation-item navigation-item-active">Contact</a></li>
+               <li role="presentation"><a href="work.html" role="menuitem" class="navigation-item">Work</a></li>
+               </div>
+           </ul>
+       </nav>
+       </header>
+        <h1>Contact</h1>
+        <main>
+        <div class="contact">
+            <div class="contanct-info">
+            <!--Contact content-->
+            <h2>Contact Information</h2>
+            Levi Redinger<br>
+            Columbus, Ohio<br>
+            <br>
+            <a href="mailto:levi.j.redinger@gmail.com">levi.j.redinger@gmail.com</a>
+            <br>
+            <p>Or use the contact form to send a message.</p>
+            </div>
+             <!--Contact form-->
+             <div class="contact-form">
+                <h2>Contact form</h2>
+                <form action="action_page.php" method="post" id="contact-form">
+                    <label for="cantact-email" class="standard-label" >Email:</label>
+                    <input type="email" id="contact-email" required>
+    
+                    <label for="tel" class="standard-label" >Telephone: </label>
+                    <input type="tel" id="tel" pattern="\d{3}[\-]\d{3}[\d{4}">
+    
+                    <label for="message" class="standard-label">Message: </label>
+                    <textarea required maxlength="240" id="message"></textarea>
+    
+                    <input type="submit" value="Send message">
+                </form>
+                </div>
+        </main>
+        <div class="cta-button">
+            <a href="https://example.com/product" class="cta-button">Call to action link</a>
+            </Div>
+            <div class="button-container">
+            <!--Button practice-->
+            <button class="button" type="button"> Task 1.5 button</button>
+        </Div>
+        <footer>
+            <p>Find me on</p>
+            <!--social media-->
+            <div class="media-icons">
+                <a target="_blank" href="https://facebook.com">
+                    <img src="images/facebook_icon.svg" class="media-icons__icon" alt="Facebook">
+                    </a>
+                    <a target="_blank" href="https://instagram.com">
+                    <img src="images/instagram_icon.svg" class="media-icons__icon" alt="Instagram">
+                    </a>
+                    <a target="_blank" href="https://linkedin.com">
+                    <img src="images/linkedin_icon.svg" class= "media-icons__icon" alt="LinkedIn">
+                    </a>
+            </div>
+        </footer>
+        <script src="js/tota11y.min.js"></script>
+    </Body>

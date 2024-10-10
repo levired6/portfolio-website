@@ -1,0 +1,508 @@
+/* scss changing colors with native css color variables, replace any other 
+repetitive values */
+:root {
+    --primary-color: #112055;
+    --primary-lighter: #223066;
+    --primary-darker: #001044;
+    --secondary-color: #4f9d92;
+    --background-color: rgb(41, 40, 40);
+    --text-color: antiquewhite;
+    --font-size: 16px;
+    --line-height: 1.6;
+    --font-family: "DM Serif Display", serif;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color:   
+   var(--text-color);
+  }
+
+/*
+Pick at least one font from Google fonts. - dm serif
+Define font sizes and line heights for default text elements (body, headeers, etc.).
+*/
+
+body {
+    background-color:rgb(41, 40, 40);
+    font-family: "DM Serif Display", serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color:antiquewhite;
+  }
+  
+  
+  
+  /*--navigation bar--*/
+  nav{
+    float:right;
+    text-align:right;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0px 12px;
+    position: relative;
+    cursor: pointer;
+  }
+  nav li a {
+    text-decoration: none;
+  }
+  
+  .navigation__item:visited {
+    color:antiquewhite;
+  }
+  
+  .navigation__item:active {
+    text-decoration: none;
+    color:lightslategrey;
+    font-weight: 600;
+  }
+  
+  
+  /* nav bar animation Circle behind */
+  div.circleBehind a:before, 
+  div.circleBehind a:after
+  {
+      position: absolute;
+      top: 22px;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      border: 4px solid #0277bd;
+      transform: translateX(-50%) translateY(-50%) scale(0.8);
+      border-radius: 50%;
+      background: transparent;
+      content: "";
+      opacity: 0;
+      transition: all 0.3s;
+      z-index: -1;
+  }
+  
+  div.circleBehind a:after
+  {
+      border-width: 2px;
+      transition: all 0.4s;
+  }
+  
+  div.circleBehind a:hover:before
+  {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+  
+  div.circleBehind a:hover:after
+  {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-50%) scale(1.3);
+  }
+  
+  .photo-self-portrait-container {
+    text-align:center;
+  }
+  
+  h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 2;
+    color:antiquewhite
+  }
+  
+  h2{
+    font-size:18px;
+    font-weight:400;
+    line-height: 1.5;
+    color:antiquewhite
+  }
+  
+  
+  
+  /* index */
+  .profile {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  .profile-portrait{
+    float: left;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+  
+  .index-content {
+    text-align: center;
+  }
+  
+  /*header items*/
+  .page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  }
+  .page-header__item {
+    flex: 0 1 200px;
+    width: 200px;
+    border-radius: 10%;
+  }
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+  
+  .click-to-command {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* about me */
+  .about-me-paragraph {
+    text-align: center;
+    
+  }
+  table {
+    table-layout: fixed;
+    text-align:center;
+    border-collapse: collapse;
+    border: 3px solid antiquewhite;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  
+  /*about page button*/
+  div.button2-container {
+    text-align: center;
+  }
+  .button2 {
+    /* overwrites browser defaults and resets the border */
+    
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: #357b70;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  
+  .button2:hover,
+  .button2:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
+  
+  /* about page svg photo & animation/transition */
+  
+  
+  /*contact form*/
+  .contact {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+   }
+  
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid antiquewhite;
+    border-radius: 3px;
+    text-align: center;
+    box-sizing: content-box;
+  }
+  
+  
+  .standard-label {
+  display: block;
+  margin-bottom: 5px;
+  
+  }
+  
+  /* Create link stylings with different stylings for normal, hover, active and visited states */
+  a {
+    color:lightslategrey;
+  }
+  
+  a:visited {
+    /* visited link light */
+    color:lightslategray;
+  }
+  
+  a:hover,
+  a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+  }
+  
+  a:active {
+    /* selected link */
+    color:lightslategrey;
+  }
+  
+  
+  
+  /*
+  Include at least one button somewhere on your page and give it stylings for normal and hover states 
+  (e.g. decrease it's opacity and have the mouse turn into a hand pointer on hover) */
+  .cta-button {
+  text-align: center;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  .button {
+    background-color:rgb(145, 148, 147);
+    color:antiquewhite;
+    font-family:inherit;
+    border-color:rgb(217, 252, 251);
+    padding: 10px;
+    border-radius:3px;
+    
+  }
+   /*lets the mouse appear as a hand and changes color of button when hovering over the button */
+  .button:hover {
+    cursor: pointer;
+    Opacity: 0.8;
+  }
+    
+  /*--work.html grid--*/
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .grid-item {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  /*--footer--*/
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  footer p {
+  font-size: 2rem;
+  color:antiquewhite;
+  text-align: center;
+  margin-bottom: 10px;
+  }
+  
+  .media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .media-icons__icon {
+    width: 32px;
+    height:32px;
+    margin: 0 10px;
+  }
+  
+  /*about animation */
+  /*photo*/
+  g#photo-symbol {
+    width:auto;
+    position:relative;
+    animation: slide-down 2s normal ease-in-out forwards;
+  }
+  @keyframes slide-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(35%);   
+  
+      opacity: 0;
+    }
+  }
+  /*pie-graph*/
+  g#pie-graph {
+    width:auto;
+    position:relative;
+    animation: slide-down 2s normal ease-in-out forwards;
+    animation-delay: 2s;
+  }
+  @keyframes slide-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(35%);   
+  
+      opacity: 0;
+    }
+  }
+  
+  /*computer-code-screen*/
+  g#computer-code-screen {
+    width:auto;
+    position:relative;
+    animation: slide-down 2s normal ease-in-out forwards;
+    animation-delay: 4s;
+  }
+  @keyframes slide-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(35%);   
+  
+      opacity: 0;
+    }
+  }
+    
+  /*code symbol*/
+  g#code-symbol {
+    width:auto;
+    position:relative;
+    animation: slide-down 2s normal ease-in-out forwards;
+    animation-delay: 6s;
+  }
+  @keyframes slide-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(35%);   
+  
+      opacity: 0;
+    }
+  }
+  
+  /*enter-button*/
+  g#enter-button {
+    width:auto;
+    position:relative;
+    animation: slide-down 2s normal ease-in-out forwards;
+    animation-delay: 8s;
+  }
+  @keyframes slide-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(35%);   
+  
+      opacity: 0;
+    }
+  }
+  
+  /*rocket*/
+  
+  g#rocket {
+    width:auto;
+    position:relative;
+    animation: slide-down 2s normal ease-in-out forwards;
+    animation-delay: 10s;
+  }
+  @keyframes slide-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(35%);   
+  
+      opacity: 0;
+    }
+  }
+  
+  
+  /*animation page*/
+  @keyframes color-change {
+    from {
+      fill: #edc655;
+    }
+    to {
+      fill: #f76414;
+    }
+  }
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  } 
+  /* cloud front movement */
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+  
+  /* cloud back movement*/
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+  
+  
+  @media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+  
+  
