@@ -312,10 +312,50 @@ margin-bottom: 10px;
   height:32px;
   margin: 0 10px;
 }
+/*animation page */
+.svg2,
+#photo-symbol {
+  animation: slide-down 2s ease-in-out forwards;
+}
+
+#pie-graph {
+  animation: slide-down 2s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+#computer-code-screen {
+  animation: slide-down 2s ease-in-out forwards;
+  animation-delay: 4s;
+}
+
+#code-symbol {
+  animation: slide-down 2s ease-in-out forwards;
+  animation-delay: 6s;
+}
+
+#enter-button {
+  animation: slide-down 2s ease-in-out forwards;
+  animation-delay: 8s;
+}
+
+#rocket {
+  animation: slide-down 2s ease-in-out forwards;
+  animation-delay: 10s;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(35%);
+    opacity: 0;
+  }
+}
 
 /*about animation */
 /*photo*/
-g#photo-symbol {
+.animation2 g#photo-symbol {
   width:auto;
   position:relative;
   animation: slide-down 2s normal ease-in-out forwards;
@@ -403,7 +443,6 @@ g#enter-button {
 }
 
 /*rocket*/
-
 g#rocket {
   width:auto;
   position:relative;

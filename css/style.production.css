@@ -336,7 +336,7 @@ body {
   
   /*about animation */
   /*photo*/
-  g#photo-symbol {
+  .animation2 g#photo-symbol {
     width:auto;
     position:relative;
     animation: slide-down 2s normal ease-in-out forwards;
