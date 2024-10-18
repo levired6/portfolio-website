@@ -219,7 +219,12 @@ div.button2-container {
   justify-content: center;
   align-items: stretch;
 }
-
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .contact {
+    column-gap: 0; /* Remove column gap on small screens */
+    flex-direction: column;
+  }
+}
 .contact-info,
 .contact-form {
   width: 100%;

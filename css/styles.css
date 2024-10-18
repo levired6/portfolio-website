@@ -193,13 +193,19 @@ div.button2-container {
 /* about page svg photo & animation/transition */
 
 /* contact form */
-.contact {
+ .contact {
   display: flex;
   margin: 0 auto;
-  padding: 20px;
+  padding:20px;
   column-gap: 20px;
   justify-content: center;
   align-items: stretch;
+}
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .contact {
+    column-gap: 0; /* Remove column gap on small screens */
+    flex-direction: column;
+  }
 }
 
 .contact-info,
