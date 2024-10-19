@@ -193,17 +193,20 @@ div.button2-container {
 /* about page svg photo & animation/transition */
 
 /* contact form */
- .contact {
-  display: flex;
-  margin: 0 auto;
-  padding:20px;
-  column-gap: 20px;
-  justify-content: center;
-  align-items: stretch;
-}
-@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .contact {
+      display: flex;
+      margin: 0 auto;
+      padding: 20px;
+      column-gap: 20px;
+      justify-content: center;
+      align-items: stretch;
+    }
+    
+/* adjust the breakpoint as needed */
+@media(max-width: 768px) {
   .contact {
-    column-gap: 0; /* Remove column gap on small screens */
+    column-gap: 0;
+    /* Remove column gap on small screens */
     flex-direction: column;
   }
 }
@@ -424,7 +427,7 @@ g#rocket {
   }
 }
 
-/* animation page */
+/* animation page example */
 @keyframes color-change {
   from {
     fill: #edc655;
