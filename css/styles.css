@@ -15,6 +15,7 @@ body {
 nav {
   float: right;
   text-align: right;
+  padding: 20px;
 }
 
 nav ul {
@@ -32,23 +33,9 @@ nav li {
   cursor: pointer;
 }
 
-nav li a {
-  text-decoration: none;
-}
-
-.navigation__item:visited {
-  color: antiquewhite;
-}
-
-.navigation__item:active {
-  text-decoration: none;
-  color: lightslategrey;
-  font-weight: 600;
-}
-
 /* nav bar animation Circle behind */
-div.circleBehind a::before,
-div.circleBehind a::after {
+nav li a::before,
+nav li a::after {
   position: absolute;
   top: 22px;
   left: 50%;
@@ -64,17 +51,17 @@ div.circleBehind a::after {
   z-index: -1;
 }
 
-div.circleBehind a::after {
+nav li a::after {
   border-width: 2px;
   transition: all 0.4s;
 }
 
-div.circleBehind a:hover:before {
+nav li a:hover:before {
   opacity: 1;
   transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
-div.circleBehind a:hover:after {
+nav li a:hover:after {
   opacity: 1;
   transform: translateX(-50%) translateY(-50%) scale(1.3);
 }
@@ -222,7 +209,7 @@ div.button2-container {
   text-align: center;
   box-sizing: content-box;
 }
-
+/* contact form */
 .standard-label {
   display: block;
   margin-bottom: 5px;
