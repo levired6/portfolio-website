@@ -180,15 +180,15 @@ div.button2-container {
 /* about page svg photo & animation/transition */
 
 /* contact form */
-    .contact {
-      display: flex;
-      margin: 0 auto;
-      padding: 20px;
-      column-gap: 20px;
-      justify-content: center;
-      align-items: stretch;
-    }
-    
+.contact {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
 /* adjust the breakpoint as needed */
 @media(max-width: 768px) {
   .contact {
@@ -209,6 +209,7 @@ div.button2-container {
   text-align: center;
   box-sizing: content-box;
 }
+
 /* contact form */
 .standard-label {
   display: block;
@@ -238,7 +239,7 @@ a:active {
 
 /*
 Include at least one button somewhere on your page and give it stylings for normal and hover states (e.g. decrease it's opacity and have the mouse turn into a hand pointer on hover) */
-.cta-button {
+/*.cta-button {
   text-align: center;
 }
 
@@ -253,7 +254,7 @@ Include at least one button somewhere on your page and give it stylings for norm
   border-color: rgb(217, 252, 251);
   padding: 10px;
   border-radius: 3px;
-}
+}*/
 
 /* lets the mouse appear as a hand and changes color of button when hovering over the button */
 .button:hover {
